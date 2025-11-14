@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopSmart</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to ShopSmart</h2>
+    <p>Your one-stop destination for smart online shopping!</p>
+  </section>
+
+  <section id="products">
+    <h2>Products</h2>
+    <div id="product-list" class="grid"></div>
+  </section>
+
+  <section id="auth">
+    <h2>User Login / Registration</h2>
+    <div id="auth-forms">
+      <form id="login-form">
+        <h3>Login</h3>
+        <input id="loginEmail" placeholder="Email" required>
+        <input id="loginPass" type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="register-form">
+        <h3>Register</h3>
+        <input id="regName" placeholder="Name" required>
+        <input id="regEmail" placeholder="Email" required>
+        <input id="regPhone" placeholder="Phone" required>
+        <input id="regPass" type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div id="user-panel" style="display:none;">
+      <p id="user-greet"></p>
+      <p id="user-email"></p>
+      <button id="logout">Logout</button>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>Reviews & Comments</h2>
+    <form id="review-form">
+      <textarea id="reviewText" placeholder="Write your review" required></textarea>
+      <select id="reviewProduct"></select>
+      <input id="reviewRating" type="number" min="1" max="5" placeholder="Rating (1–5)" required>
+      <button type="submit">Submit Review</button>
+    </form>
+    <ul id="reviews-list"></ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact / Customer Care</h2>
+    <form id="care-form">
+      <input id="careName" placeholder="Your Name" required>
+      <input id="careEmail" placeholder="Your Email" required>
+      <textarea id="careMessage" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>ShopSmart is a demo e-commerce portal designed to show how modern web apps work using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
